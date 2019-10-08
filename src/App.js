@@ -1,15 +1,17 @@
 import React from 'react';
-import Nav from './components/Navbar';
-import QuoteCard from './components/QuoteCard'; 
+import Contact from './components/Contact';
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Nav />
-      <QuoteCard />
+      <Contact image="https://randomuser.me/api/portraits/women/30.jpg" character="Derek Pantalon" online={true} />
+      <Contact image="https://randomuser.me/api/portraits/women/69.jpg" character="Eric Chemise" online={false} />
+      <Contact image="https://randomuser.me/api/portraits/men/53.jpg" character="Léa BrosseàDent" online={true} />
     </div>
   );
 }
+
+
 
 export default App;
