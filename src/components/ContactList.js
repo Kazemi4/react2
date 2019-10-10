@@ -22,11 +22,7 @@ const ContactList = () => {
         }
     ];
 
-    // Return permet de récupérer les infos de mon tablo
-    // Les accolades me permette d'entrée ma valeur
-    // j'insère grâce à la méthode map, ma fonction anonyme dans la qu'elle je déclare mon tabloololol
-    // et je récupère grace aux props, les éléments inscrit dans le tablolololll. 
-    // J'exporte default et je link mon contactlist à contactjs.
+  
     return (
         <div>
             {tab.map(item => (
