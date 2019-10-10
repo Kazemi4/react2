@@ -7,6 +7,7 @@ const Contact = (props) => {
             <img className="avatar" src={props.image} alt={props.character} />
             <div>
                 <p className="name">{props.character}</p>
+                <p className="adress">{props.adress}</p>
                 {connection(props.online)}
             </div>
         </div>
