@@ -19,6 +19,20 @@ const ContactList = () => {
 
             picture: "https://randomuser.me/api/portraits/men/69.jpg",
             online: true,
+        },
+
+        {
+            name: "On mange quoi à midi ?",
+
+            picture: "https://randomuser.me/api/portraits/women/24.jpg",
+            online: true,
+        },
+
+        {
+            name: "J'ai mal au ventre",
+
+            picture: "https://randomuser.me/api/portraits/women/33.jpg",
+            online: false,
         }
     ];
 
