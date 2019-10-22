@@ -1,19 +1,31 @@
 import React from 'react';
 import './Contact.css'
 
-const Contact = (props) => {
-    return (
-        <div className="Contact">
-            <img className="avatar" src={props.image} alt={props.character} />
-            <div>
-                <p className="name">{props.character}</p>
-                <p className="adress">{props.adress}</p>
-                {connection(props.online)}
-            </div>
-        </div>
-    );
-}
 
+class Contact extends React.Component {
+    state = {
+        online: false,
+
+    }
+
+    onLine = (event) => {
+        this.setState({online: !this.state.online})
+    }
+
+    render() {
+        return (
+            <div className="Contact">
+                <img className="avatar" src={this.props.image} alt={this.props.character} />
+                <div>
+                    <p className="name">{this.props.character}</p>
+                    <p className="adress">{this.props.adress}</p>
+                    <button onClick={this.onLine}>{connection(this.state.online)}</button>
+
+                </div>
+            </div>
+        );
+    }
+}
 const connection = (param) => {
     if (param) {
         return (
@@ -29,6 +41,6 @@ const connection = (param) => {
         )
     }
 }
- 
+
 
 export default Contact;
